@@ -49,5 +49,6 @@ for path in nx.all_simple_paths(Graph, source=0, target=45):
     sum = 0
     for n in path:
         sum = sum + nodes[n]['price']
+    if sum == 10000:
         print("path: {}, sum:{}".format(path, sum))
 
