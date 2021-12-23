@@ -5,7 +5,7 @@ import networkx as nx
 prices=[
     0,
     446, 358, 704, 514, 298,
-    214, 697, 526, 225, 471,
+    214, 697, 256, 225, 471,
     853, 151, 584, 387, 953,
     685, 188, 489, 285, 498,
     397, 295, 926, 405, 382,
@@ -49,6 +49,5 @@ for path in nx.all_simple_paths(Graph, source=0, target=45):
     sum = 0
     for n in path:
         sum = sum + nodes[n]['price']
-    if sum == 10000:
         print("path: {}, sum:{}".format(path, sum))
 
